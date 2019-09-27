@@ -6,7 +6,7 @@
     app:startDestination="@id/mainMenu">
     <fragment
         android:id="@+id/mainMenu"
-        android:name="com.github.leonchrisdion.avengersEndgame.MainMenu"
+        android:name="com.github.gmarcell.myadventure.MainMenu"
         android:label="Main Menu"
         tools:layout="@layout/fragment_main_menu">
         <action
@@ -18,17 +18,17 @@
     </fragment>
     <fragment
         android:id="@+id/howToPlay"
-        android:name="com.github.leonchrisdion.avengersEndgame.HowToPlay"
+        android:name="com.github.gmarcell.myadventure.HowToPlay"
         android:label="How To Play"
         tools:layout="@layout/fragment_how_to_play" />
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.github.leonchrisdion.avengersEndgame.GameFragment"
-        android:label="Avengers Endgame"
+        android:name="com.github.gmarcell.myadventure.GameFragment"
+        android:label="My Adventure"
         tools:layout="@layout/fragment_game" />
     <fragment
         android:id="@+id/endingsFragment"
-        android:name="com.github.leonchrisdion.avengersEndgame.EndingsFragment"
+        android:name="com.github.gmarcell.myadventure.EndingsFragment"
         android:label="Unlocked Endings"
         tools:layout="@layout/fragment_endings" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/endingDisplay"
-        android:name="com.github.leonchrisdion.avengersEndgame.EndingDisplay"
+        android:name="com.github.gmarcell.myadventure.EndingDisplay"
         android:label="View Ending"
         tools:layout="@layout/fragment_ending_display" />
 </navigation>

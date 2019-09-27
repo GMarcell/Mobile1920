@@ -1,12 +1,15 @@
 package com.github.gmarcell.myadventure
 
 import android.app.Application
+import android.media.Image
+import android.widget.ImageView
 
 class MyApplication: Application() {
 
     data class Scene(
         val body: String,
-        val actions: List<String>
+        val actions: List<String>,
+        val image: ImageView
     )
 
     companion object {
@@ -20,7 +23,8 @@ class MyApplication: Application() {
             // 0
             Scene (
                 "You wake up in the forest, what do you do?",
-                listOf("Scream loudly", "Wander around")),
+                actions = listOf("Scream loudly", "Wander around")
+            ),
 
             // 1
             Scene (
@@ -54,8 +58,8 @@ class MyApplication: Application() {
 
             // 7
             Scene (
-                "Inside, you find the hut is filled with mystical and strange tables. Do you go further inside?",
-                actions = listOf("Investigate further", "You went to the exit as quick as you can")),
+                "As you investigate further, you found in one of the rooms, there is a witch. Nearby you can see a knife in the table. Or you can run away. What do you do?",
+                actions = listOf ("Kill the Witch", "Run Away")),
 
             // 8 NORMAL ENDING
             Scene (

@@ -1,4 +1,4 @@
-package com.github.leonchrisdion.avengersEndgame
+package com.github.gmarcell.myadventure
 
 import org.junit.Test
 
