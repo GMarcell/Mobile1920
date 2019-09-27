@@ -59,7 +59,7 @@ class MyApplication: Application() {
             // 7
             Scene (
                 "As you investigate further, you found in one of the rooms, there is a witch. Nearby you can see a knife in the table. Or you can run away. What do you do?",
-                actions = listOf ("Kill the Witch", "Run Away")),
+                actions = listOf ("Kill the witch", "Run away")),
 
             // 8 NORMAL ENDING
             Scene (
