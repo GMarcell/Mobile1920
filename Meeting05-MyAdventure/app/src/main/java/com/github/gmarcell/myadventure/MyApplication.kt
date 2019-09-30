@@ -2,14 +2,12 @@ package com.github.gmarcell.myadventure
 
 import android.app.Application
 import android.media.Image
-import android.widget.ImageView
 
 class MyApplication: Application() {
 
     data class Scene(
         val body: String,
-        val actions: List<String>,
-        val image: ImageView
+        val actions: List<String>
     )
 
     companion object {
