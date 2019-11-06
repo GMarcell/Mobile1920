@@ -8,7 +8,9 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import com.github.gmarcell.databinding.ActivityMainBinding
+import com.github.gmarcell.R.layout.activity_main as activity_main1
 
 class MainActivity : AppCompatActivity() {
 
@@ -61,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this@MainActivity, activity_main1)
         binding.defLoremIpsum = DefLoremIpsum
         binding.loremIpsumComeFrom = LoremIpsumComeFrom
         binding.loremIpsumSource = LoremIpsumSource
